@@ -1,5 +1,5 @@
 # cot-4500-bonus
-Bonus Assignment
+## Bonus Assignment
 
 In this assignment we will be utilizing the python platform to perform linear approximations by using techniques such as the Jacobi method, Gauss-Seidel, and the Modified Eulers Method 
 
