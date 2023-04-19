@@ -9,8 +9,8 @@ To compile you will need to have python installed as well as numpy. You can do t
 
 After that, to run the code you will need to change the directory to the folder where the file was downloaded. Ex: If the file was dowloaded to the "Downloads" folder you'd type:
 
-cd Downloads
+```cd Downloads```
 
 Lastly to run the code, input:
 
-bonus_assignment.py
+```bonus_assignment.py```
