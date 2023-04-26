@@ -62,28 +62,32 @@ print(i)
     
 # Question 5 - The final value of the modified eulers method
 def function(t: float , y: float):
-    return y - (t**3)
+  return y-(t**3)
 
-def mod_euler_method(function, t0, y0, h, n):
-    t = np.zeros(n+1)
-    y = np.zeros(n+1)
+def mod_euler_method (function,t0,y0,h,n):
+    t= np.zeros(n+1)
+    y= np.zeros(n+1)
     t[0] = t0
     y[0] = y0
-    for i in range(n):
+    #loop
+    for i in range (n):
+        
         slo1 = function(t[i], y[i])
         t_m = t[i] + h / 2
         y_m = y[i] + (h / 2) * slo1
+
         slo2 = function(t_m, y_m)
-        t[i+1] = t[i] + h
+        t[i+1]= t[i] + h
         y[i+1] = y[i] + h * slo2
-    return y[-1]
+        
+    return y[100]
 
-t0 = 0.5
-y0 = t0 ** 3
-n = 100
-a = 0
-b = 3
-h = (b - a) / n
+t0= 0
+y0= 0.5
+h = (3-0)/100
+n=100
 
-final_val = mod_euler_method(function, t0, y0, h, n)
-print("The final value of y using modified Euler's method is:", final_val)
+final_val = mod_euler_method(function,t0,y0,h,n)
+
+print(final_val)
+
