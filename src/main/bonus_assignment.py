@@ -21,7 +21,6 @@ def gaus_s (A, B, r, tol, max_i):
     #Compute Magnitude
       if np.linalg.norm(r - r_prev) < tol:
           return num_i+1
-            
       num_i += 1
     return -1
 
