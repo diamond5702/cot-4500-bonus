@@ -28,7 +28,7 @@ def gaus_s (A, B, r, tol, max_i):
 num_i = gaus_s(A, B, r, tol, max_i)
 
 if num_i != -1:
-    print("Number of iterations to converge: ", num_i)
+    print(num_i)
 else:
     print("Error")
 
