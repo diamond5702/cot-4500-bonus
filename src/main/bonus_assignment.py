@@ -18,7 +18,7 @@ def gaus_s (A, B, r, tol, max_i):
       
       for j in range(len(B)):
         r[j] = (B[j] - np.dot(A[j, :j], r[:j]) - np.dot(A[j, j+1:], r_prev[j+1:])) / A[j, j]
-    #Compute Magnitude
+    #Calculate Magnitude
       if np.linalg.norm(r - r_prev) < tol:
           return num_i+1
       num_i += 1
