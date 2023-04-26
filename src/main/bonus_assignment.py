@@ -33,6 +33,34 @@ else:
     print("Error")
 
 
+# Question 3 - Determine the number of iterations necessary to solve f(x) = x3 - x2 + 2 = 0 using newton-raphson from the left side
+
+#function 
+def f(x):
+    return x**3 - x**2 + 2
+#derivative
+
+def deriv(x):
+    return 3*x**2 - 2*x
+
+x = 0.5
+tol = 1e-6
+max_i = 100
+converge = False
+i = 0
+while not converge and i < max_i:
+    x_new = x - f(x) / deriv(x)
+    if abs(x_new - x) < tol:
+        converge = True
+    x = x_new
+    i += 1
+
+print(i)
+    
+    
+    
+    
+    
 # Question 5 - The final value of the modified eulers method
 def function(t: float , y: float):
     return y - (t**3)
